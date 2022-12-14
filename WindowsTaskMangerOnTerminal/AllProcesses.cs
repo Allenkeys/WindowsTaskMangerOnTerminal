@@ -15,5 +15,19 @@ namespace WindowsTaskMangerOnTerminal
                 Console.WriteLine("**************************************\n");
             }
         }
+
+
+        public static void StartApplication()
+        {
+            Process process = null;
+            try
+            {
+                process = Process.Start(@"C:\Program Files\Git\git-bash.exe");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

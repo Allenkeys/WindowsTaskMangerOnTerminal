@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             AllProcesses.EnumerateProcesses();
+            AllProcesses.StartApplication();
         }
     }
 }
